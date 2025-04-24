@@ -1,7 +1,9 @@
 use std::thread::sleep;
 use rand::prelude::SliceRandom;
+
 const COLOMN: usize = 40;
 const ROWS: usize = 15;
+
 fn sleeps(sec: u64) {
     sleep(std::time::Duration::from_secs(sec)/2);
     print!("\x1B[2J\x1B[H");
